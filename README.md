@@ -28,12 +28,6 @@ states devices show up in.
 > **The result:** what used to be a multi-step, per-device admin task becomes a roughly
 > one-minute, user-driven action — turning hours of hands-on onboarding into minutes.
 
-<div align="center">
-
-![Device enrollment success dialog](docs/screenshots/success-dialog.png)
-
-</div>
-
 ---
 
 ## Table of Contents
