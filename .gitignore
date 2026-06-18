@@ -1,0 +1,34 @@
+# ---- Secrets / credentials (never commit) ----
+*.key
+*.pem
+*.env
+.env
+.env.*
+secrets.*
+*apikey*
+*api_key*
+*credentials*
+
+# ---- JumpCloud runtime artifacts ----
+jc_device_bind.log
+jc_email.txt
+jc_result.txt
+*.log
+
+# ---- OS noise ----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ---- Editor / IDE ----
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---- PowerShell ----
+*.psd1.bak
+PSScriptAnalyzerSettings.psd1
