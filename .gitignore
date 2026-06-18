@@ -32,3 +32,6 @@ Desktop.ini
 # ---- PowerShell ----
 *.psd1.bak
 PSScriptAnalyzerSettings.psd1
+
+# ---- Local tooling ----
+.claude/
