@@ -41,7 +41,6 @@ states devices show up in.
 - [Deployment](#deployment)
 - [Configuration](#configuration)
 - [Output & logging](#output--logging)
-- [Roadmap](#roadmap)
 - [License](#license)
 
 ---
@@ -102,6 +101,14 @@ flowchart TD
     L --> M[Success: prompt user to re-login]
     X --> N[Write diagnostics to device description]
 ```
+
+> [!IMPORTANT]
+> **The JumpCloud identity is bound to whoever is logged in when the script runs.** It detects
+> the currently logged-in Windows account, shows the email prompt to *that* user, and binds the
+> JumpCloud identity (resolved from the email they enter) to *that same* local account.
+> Therefore it must run while the **intended end user is signed in** — do **not** trigger it
+> from an IT admin session or a different local account, or the device will be bound to the
+> wrong identity.
 
 ---
 
@@ -201,15 +208,6 @@ The script writes to `C:\Users\Public\Documents\`:
 On failure, a one-line diagnostic summary (binding status, issue, device state, local/JC user,
 email) is written to the device's **description** field in JumpCloud for quick triage. A
 single-line status summary is also emitted to the command output for visibility in the console.
-
----
-
-## Roadmap
-
-- [ ] macOS enrollment script (Bash)
-- [ ] Windows enrollment script (Bash / cross-shell variant)
-- [ ] Additional onboarding utilities (group assignment, app provisioning)
-- [ ] Usage screenshots and walkthrough GIFs
 
 ---
 
