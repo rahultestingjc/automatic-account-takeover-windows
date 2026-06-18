@@ -191,6 +191,9 @@ $JC_API_KEY = {{Apikey}}      # your JumpCloud API key
 > ⚠️ **Never commit a real API key.** Use a JumpCloud **Automation Variable** instead, so the
 > key is injected only at dispatch time.
 
+> 🌍 **EU-region tenants:** if your JumpCloud org is in the EU region, change `$JC_BASE` in the
+> script from `https://console.jumpcloud.com/api` to `https://console.eu.jumpcloud.com/api`.
+
 ---
 
 ## Output & logging

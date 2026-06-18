@@ -57,6 +57,7 @@ catch {
 # variables. JumpCloud substitutes the real values at runtime when the
 # command is dispatched to the device. Do NOT hardcode a real API key here.
 $JC_API_KEY = {{Apikey}}
+# EU-region tenants: change this to https://console.eu.jumpcloud.com/api
 $JC_BASE    = "https://console.jumpcloud.com/api"
 $SystemID   = {{device.id}}
 
