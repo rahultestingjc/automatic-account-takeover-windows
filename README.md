@@ -169,7 +169,13 @@ targeting Windows devices.
 3. Provide the required value for the configuration placeholder (see
    [Configuration](#configuration)).
 4. Install the JumpCloud agent on the target device(s). The end user will see an email prompt,
-   then a result dialog when it finishes.
+   then a notification that enrollment is complete asking them to **sign out and sign back in**.
+
+> [!NOTE]
+> **Run at agent registration _or_ on demand.** With the "after Agent Install" trigger the
+> command runs automatically when the agent registers. If you'd rather **not** bind the
+> JumpCloud user at registration time, skip that trigger and run the same command **on demand**
+> whenever you choose.
 
 ---
 
